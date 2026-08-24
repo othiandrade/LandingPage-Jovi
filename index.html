@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jovi Mobile | Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -34,22 +38,30 @@
         <section class="hero" id="paginainicial">
             <h1>JOVI MOBILE</h1>
             <p>"Sucesso no Mundo. Agora no Brasil"</p>
-            <!-- <img src="./images/estudante+funcionalidade.png" alt="Estudante apontando câmera pro caderno"> -->
+            <img src="./images/estudante+funcionalidade.png" alt="Estudante apontando câmera pro caderno">
         </section>
-        <section id="publicoalvo">
+        <section class="container" id="publicoalvo">
             <h2>Público-alvo</h2>
+            <div class="grid-publico">
             <h3>Estudantes Full Time</h3>
-            <!-- <img src="images/estudantesfulltime.jpg" alt="estudantes em sala de aula, interagindo com o celular na mão"> -->
+            <img src="images/estudantesfulltime.jpg" alt="estudantes em sala de aula, interagindo com o celular na mão">
             <p>Acrescentar texto aqui</p>
+            </div>
         </section>
-        <section id="solucao">
+        <section class="container" id="solucao">
             <h2>Solução</h2>
+            <div class="grid-solucao">
+                <div class="card-funcionalidade">
             <h3>Criação automática de pastas por similaridade de conteúdo</h3> 
             <p>A criação de pastas automáticas com base em similaridade semântica configura-se como um recurso altamente relevante para o cotidiano do estudante, uma vez que possibilita a detecção do conteúdo e a organização da galeria conforme seus interesses. Dessa forma, elimina-se a necessidade de interrupções frequentes para classificação manual dos arquivos, otimizando tempo e produtividade.</p>
+            </div>
+            <div class="card-funcionalidade">
             <h3>Geração automática de PDF a partir de imagem (OCR)</h3> 
             <p>acrescentar texto</p>
+            </div>
+        </div>    
         </section>
-        <section id="galeria">
+        <section class="container" id="galeria">
             <h2>Galeria</h2>
             <ul>
                 <li>
@@ -78,7 +90,7 @@
                 </li>
             </ul>
         </section>
-        <section id="nossaequipe">
+        <section class="container" id="nossaequipe">
             <h2>Nossa Equipe</h2>
             <ul>
                 <li>
@@ -113,17 +125,30 @@
                 </li>
             </ul>
         </section>
-        <section id="contato">
+        <section class="container" id="contato">
             <h2>Contato</h2>
             <form>
+                <div class="campo">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                <input type="text" id="nome" name="nome" maxlength="50" placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="campo">
                 <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="email@hotmail.com">
+                <input type="email" id="email" name="email" maxlength="35" placeholder="email@hotmail.com">
+                </div>
+
+                <div class="campo">
                 <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(11) 9999-9999">
+                <input type="tel" id="telefone" name="telefone" maxlength="11" placeholder="(99)1234-5678">
+                </div>
+                
+                <div class="campo">
                 <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem aqui..." rows="5"></textarea>
+                <textarea name="mensagem" id="mensagem" maxlength="700" placeholder="Escreva sua mensagem aqui..." rows="5"></textarea>
+                </div>
+
+
                 <button type="submit">Enviar Mensagem</button>
             </form>
         </section>

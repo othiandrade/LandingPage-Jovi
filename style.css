@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #242933;
+    --cor-secundaria: #45474d;
+    --cor-fundo: #ffffff;
+    --cor-fundo-secundaria: #f7f8fa;
+    --cor-texto: #242933;
+    --cor-borda: #dfe1e6;
+
+    --fonte-principal:"Inter", sans-serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+    background-color: var(--cor-fundo);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: flex-start;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+.grid-publico {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.grid-solucao {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+#galeria > ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+#nossaequipe > ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input, textarea {
+    padding: 0.75rem;
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+    font-family: var(--fonte-principal);
+}
