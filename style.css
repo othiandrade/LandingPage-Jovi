@@ -7,8 +7,8 @@
 :root {
     --cor-primaria: #242933;
     --cor-secundaria: #45474d;
-    --cor-fundo: #ffffff;
-    --cor-fundo-secundaria: #f7f8fa;
+    --cor-fundo: #f7f8fa;
+    --cor-fundo-secundaria: #ffffff;
     --cor-texto: #242933;
     --cor-borda: #dfe1e6;
 
@@ -125,7 +125,7 @@ input, textarea {
 
     .grid-publico {
         grid-template-columns: 1fr 1fr;
-        align-items: center;
+        align-items: start;
     }
 
     .grid-solucao {
@@ -140,6 +140,10 @@ input, textarea {
     button {
         grid-column: 1 / -1;
     }
+
+    #nossaequipe > ul {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
 
 img {
@@ -153,4 +157,81 @@ img {
     aspect-ratio: 21 / 9;
     object-fit: cover;
     object-position: 100% 33%;
+}
+
+.texto-publico {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-funcionalidade {
+    background-color: var(--cor-fundo-secundaria);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+#galeria li {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--cor-fundo-secundaria);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+#galeria img {
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 8px solid var(--cor-primaria)
+}
+
+.texto-galeria {
+    min-height: 5rem;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+#nossaequipe li {
+    background-color: var(--cor-fundo-secundaria);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+#nossaequipe img {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+button {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+    margin-bottom: 2rem;
+    border: none;
+    padding: 0.875rem 1.5rem;
+    border-radius: 4px;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-fundo-secundaria);
+    transition: background-color 0.3s ease;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+    border-top: 3px solid var(--cor-secundaria);
 }
