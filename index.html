@@ -11,33 +11,36 @@
 </head>
 <body>
     <header>
-        <nav class="container">
-<ul>
-    <li>
-        <a href="#paginainicial">Página Inicial</a>
-    </li>
-    <li>
-        <a href="#publicoalvo">Público-alvo</a>
-    </li>
-    <li>
-        <a href="#solucao">Solução</a>
-    </li>
-    <li>
-        <a href="#galeria">Galeria</a>
-    </li>
-    <li>
-        <a href="#nossaequipe">Nossa equipe</a>
-    </li>
-    <li>
-        <a href="#contato">Contato</a>
-    </li>    
-</ul>
-        </nav>
+        <div class="header-top container">
+            <nav>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <div class="logo">JOVI</div>
+                <ul>
+                    <li>
+                        <a href="#paginainicial">Página Inicial</a>
+                    </li>
+                    <li>
+                        <a href="#publicoalvo">Público-alvo</a>
+                    </li>
+                    <li>
+                        <a href="#solucao">Solução</a>
+                    </li>
+                    <li>
+                        <a href="#galeria">Galeria</a>
+                    </li>
+                    <li>
+                        <a href="#nossaequipe">Nossa equipe</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="hero container" id="paginainicial">
-            <h1>JOVI MOBILE</h1>
-            <h>"Sucesso no Mundo. Agora no Brasil"</h>
+            <h1>Sucesso no Mundo. Agora no Brasil.</h1>
             <img src="./images/estudante+funcionalidade.png" alt="Estudante apontando câmera pro caderno">
         </section>
         <section class="container" id="publicoalvo">
@@ -45,7 +48,7 @@
             <div class="grid-publico">
                 <div class="texto-publico">
                     <h3>Estudantes Full Time</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsum fuga totam eius, reprehenderit, voluptate ipsa impedit dolorem quod hic mollitia perspiciatis, eum nesciunt illum atque sit aliquid aperiam vero. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum explicabo officia aspernatur tempora pariatur modi, minima delectus repellendus, eius aperiam, enim molestiae earum ea possimus dolorem fugiat laboriosam iure consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus placeat iste, recusandae, nam repudiandae consequatur illo quae iusto, possimus incidunt maxime inventore animi in hic ipsa fuga! Odio, illo commodi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta error facilis, mollitia natus voluptate iste earum. Obcaecati odit non, cum eaque harum laboriosam magnam corporis assumenda, dolore, ex sit deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit officiis delectus aliquid sit tenetur, eligendi quis quas ullam. </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsum fuga totam eius, reprehenderit, voluptate ipsa impedit dolorem quod hic mollitia perspiciatis, eum nesciunt illum atque sit aliquid aperiam vero. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum explicabo officia aspernatur tempora pariatur modi, minima delectus repellendus, eius aperiam, enim molestiae earum ea possimus dolorem fugiat laboriosam iure consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus placeat iste, recusandae, nam repudiandae consequatur illo quae iusto, possimus incidunt maxime inventore animi in hic ipsa fuga! Odio, illo commodi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta error facilis, mollitia natus voluptate </p>
                     </div>
             <img src="images/estudantesfulltime.jpg" alt="estudantes em sala de aula, interagindo com o celular na mão">
             </div>
@@ -68,25 +71,25 @@
             <ul>
                 <li>
                     <div class="texto-galeria">
-                    <h3>Criação de pastas automáticas</h3>
+                    <h3>Crie pastas automaticamente após capturar a foto!</h3>
                     <p>Crie pastas automáticas de acordo com o contexto da sua imagem!</p>
                     </div>
                     <figure>
                         <img src="images/funcionalidade2.0.gif" alt="Apresentação da primeira funcionalidade">
-                        <figcaption>Após a captura da imagem, o sistema identifica o contexto e oferece a opção "Criar Pasta" que permite com que o conteúdo seja agrupado conforme o assunto, na galeria.</figcaption>
+                        <figcaption>Após a captura da imagem, a funcionalidade identifica o contexto da imagem e oferece a opção "Criar Pasta" que permite com que o conteúdo seja agrupado conforme o assunto, na galeria.</figcaption>
                     </figure>
                 </li>
                 <li>
-                    <h3>Gerar arquivo PDF através da câmera</h3>
-                    <p>Gere arquivos PDF através da câmera e economize tempo!</p>
+                    <h3>Gere arquivos PDF diretamente da sua câmera!</h3>
+                    <p>Gere arquivos PDF diretamente da sua câmera e economize tempo!</p>
                     <figure>
                         <img src="images/funcionalidade3.0.gif" alt="Apresentação da segunda funcionalidade">
                         <figcaption>Na interface da câmera, o sistema identifica em tempo real que há textos através da captura de imagem da câmera, e sugere um escaneamento, após o acionamento da funcionalidade o texto é escaneado, após a ação de "Gerar PDF" o texto é extraido da imagem e acrescentado num novo arquivo PDF.</figcaption>
                     </figure>
                 </li>
                 <li>
-                    <h3>Gere PDFs através da galeria</h3>
-                    <p>Você também pode gerar arquivos PDF através da galeria!</p>
+                    <h3>E também através da sua galeria!</h3>
+                    <p>Você também pode gerar arquivos PDF através das fotos que já estão salvas na sua galeria!</p>
                     <figure>
                         <img src="images/funcionalidade1.0.gif" alt="Apresentação da segunda funcionalidade parte 2">
                         <figcaption>A funcionalidade de "Gerar PDF" também pode ser acionada através da galeria. O fluxo ocorre de maneira semelhante ao que foi apresentado na imagem anterior, você entra na galeria, seleciona a imagem e gera o PDF a partir da imagem.</figcaption>
@@ -95,7 +98,7 @@
             </ul>
         </section>
         <section class="container" id="nossaequipe">
-            <h2>Nossa Equipe</h2>
+            <h2>Equipe Exptech</h2>
             <ul>
                 <li>
                     <figure>
@@ -149,7 +152,7 @@
                 
                 <div class="campo campo-mensagem">
                 <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem" maxlength="700" placeholder="Escreva sua mensagem aqui..." rows="5"></textarea>
+                <textarea name="mensagem" id="mensagem" maxlength="500" placeholder="Escreva sua mensagem aqui..." rows="5"></textarea>
                 </div>
 
                 <button type="submit">Enviar Mensagem</button>
@@ -158,6 +161,14 @@
     </main>
     <footer>
         <p>© 2026 Jovi Mobile. Todos os direitos reservados.</p>
+        <div class="redes-sociais">
+            <a href="#">Instagram</a>
+            <a href="#">Tiktok</a>
+            <a href="#">Facebook</a>
+            <a href="#">Youtube</a>
+            <a href="#">LinkedIn</a>
+        </div>
     </footer>
+<script src="script.js"></script>
 </body>
 </html>
