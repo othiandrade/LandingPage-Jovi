@@ -15,7 +15,6 @@ html {
 
 :root {
     --cor-primaria: #143fec;
-    --cor-secundaria: #45474d;
     --cor-fundo: #f5f5ff;
     --cor-fundo-secundaria: #ffffff;
     --cor-texto: #242933;
@@ -181,6 +180,12 @@ input, textarea {
     font-family: var(--fonte-principal);
 }
 
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 3px rgba(20, 63, 236, 0.15);
+}
+
 @media (min-width: 768px) {
     #nossaequipe > ul {
         grid-template-columns: repeat(3, 1fr);
@@ -249,7 +254,6 @@ input, textarea {
     .hero img,
     .grid-publico img {
         transition: transform 0.5s ease;
-        border-radius: 12px;
     }
 
     .hero img:hover,
@@ -305,6 +309,25 @@ img {
     aspect-ratio: 21 / 9;
     object-fit: cover;
     object-position: 100% 33%;
+    border-radius: 12px;
+}
+
+.hero-subtitulo {
+    color: var(--cor-texto);
+    max-width: 600px;
+    margin:0 auto 1.5rem;
+}
+
+.btn-cta {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo-secundaria);
+    text-decoration: none;
+    padding: 0.875rem 2rem;
+    border-radius: 999px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .texto-publico {
