@@ -11,7 +11,7 @@
         <div class="header-top container">
             <nav>
                 <div class="logo">JOVI</div>
-                <button class="menu-toggle" id="menuToggle">☰</button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
                 <ul>
                     <li>
                         <a href="#paginainicial">Página Inicial</a>
@@ -38,7 +38,7 @@
     <main>
         <section class="hero container" id="paginainicial">
             <h1>Descubra uma câmera que entende o que você precisa!</h1>
-            <p class="hero-subtitulo">Enquanto você estuda, a câmera organiza suas fotos por assunto. Quando precisar, você transforma os textos das suas fotos em PDFs.</p>
+            <p class="hero-subtitulo">Através da câmera, suas fotos de textos são organizadas por assunto na galeria e podem ser transformadas em PDFs.</p>
             <a href="#contato" class="btn-cta">Testar agora</a>
             <img src="./images/estudante+funcionalidade.png" alt="Estudante apontando câmera pro caderno">
         </section>
@@ -46,10 +46,9 @@
             <h2>Público-alvo</h2>
             <div class="grid-publico">
                 <div class="texto-publico">
-                    
-                    <h3><img src="./icons/iconstudent.svg" alt="icone de estudante" class="icone-estudante">Estudantes Full Time</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsum fuga totam eius, reprehenderit, voluptate ipsa impedit dolorem quod hic mollitia perspiciatis, eum nesciunt illum atque sit aliquid aperiam vero. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum explicabo officia aspernatur tempora pariatur modi, minima delectus repellendus, eius aperiam, enim molestiae earum ea possimus dolorem fugiat laboriosam iure consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus placeat iste, recusandae, nam repudiandae consequatur illo quae iusto, possimus incidunt maxime inventore animi in hic ipsa fuga! Odio, illo commodi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta error facilis, mollitia natus voluptate </p>
-                    </div>
+                    <h3><img src="./icons/iconstudent.svg" alt="icone de estudante" class="icone-estudante icone-azul">Estudantes Full-Time</h3>
+                    <p>Ser um estudante full-time significa abraçar uma rotina onde os estudos e a preparação profissional se tornam o centro de tudo. Longe de se resumir a apenas assistir a aulas, esse estilo de vida exige uma gestão de tempo eficiente para dar conta de uma carga horária pesada sem descuidar do desenvolvimento técnico por conta própria. O dia a dia se transforma em uma maratona constante entre compreender conceitos complexos, encarar laboratórios práticos, resolver listas longas de exercícios e correr contra o relógio para entregar projetos desafiadores dentro do prazo. No fim das contas, é uma dedicação diária intensa que exige muito foco, mas que constrói uma base sólida para encarar o mercado de trabalho com preparo e segurança.  </p>
+                </div>
             <img src="images/estudantesfulltime.jpg" alt="estudantes em sala de aula, interagindo com o celular na mão">
             </div>
         </section>
@@ -57,12 +56,12 @@
             <h2>Solução</h2>
             <div class="grid-solucao">
                 <div class="card-funcionalidade">
-            <h3><img src="icons/iconfoldertree.svg" alt="icone folder tree" class="icone-foldertree">Criação automática de pastas por similaridade de conteúdo</h3> 
+            <h3><img src="icons/iconfoldertree.svg" alt="icone folder tree" class="icone-foldertree icone-azul">Criação automática de pastas por similaridade de conteúdo</h3> 
             <p>A criação de pastas automáticas com base em similaridade semântica configura-se como um recurso altamente relevante para o cotidiano do estudante, uma vez que possibilita a detecção do conteúdo e a organização da galeria conforme seus interesses. Dessa forma, elimina-se a necessidade de interrupções frequentes para classificação manual dos arquivos, otimizando tempo e produtividade.</p>
             </div>
             <div class="card-funcionalidade">
-            <h3><img src="./icons/iconfilepdf.svg" alt="icone de PDF" class="icone-de-pdf">Geração automática de PDF a partir de imagem (OCR)</h3> 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eum voluptatem necessitatibus officia inventore reprehenderit sunt quam dolores doloremque? Harum quisquam vero aliquam placeat assumenda sit perferendis corrupti eius neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nihil voluptatibus quo tempore temporibus sunt cum? Vel tempora facere quam? Minima molestias doloremque aliquam? Explicabo eos at architecto dolorum error?</p>
+            <h3><img src="./icons/iconfilepdf.svg" alt="icone de PDF" class="icone-de-pdf icone-azul">Geração de PDF através da câmera</h3> 
+            <p>A geração de PDF por meio da câmera, permite capturar imagens e convertê-las automaticamente em texto digital por meio de OCR, preservando sua organização e estrutura. Dessa forma, fotografias de exercícios e anotações podem ser transformadas em documentos organizados e editáveis, facilitando seu armazenamento e utilização em atividades acadêmicas.</p>
             </div>
         </div>    
         </section>
@@ -71,28 +70,32 @@
             <ul>
                 <li>
                     <div class="texto-galeria">
-                    <h3>Crie pastas automaticamente após capturar a foto!</h3>
-                    <p>Crie pastas automáticas de acordo com o contexto da sua imagem!</p>
+                    <h3>Pastas criadas automaticamente após a captura da foto!</h3>
+                    <p>Suas fotos são organizadas na galeria de maneira prática!</p>
                     </div>
                     <figure>
                         <img src="images/funcionalidade2.0.gif" alt="Apresentação da primeira funcionalidade">
-                        <figcaption>Após a captura da imagem, a funcionalidade identifica o contexto da imagem e oferece a opção "Criar Pasta" que permite com que o conteúdo seja agrupado conforme o assunto, na galeria.</figcaption>
+                        <figcaption>Após o escaneamento da imagem, a funcionalidade identifica o contexto do texto que há nela, busca outras imagens que contenham informações iguais, e oferece a opção "Criar Pasta" que permite com que o conteúdo seja agrupado conforme o assunto, na galeria.</figcaption>
                     </figure>
                 </li>
                 <li>
-                    <h3>Gere arquivos PDF diretamente da sua câmera!</h3>
-                    <p>Gere arquivos PDF diretamente da sua câmera e economize tempo!</p>
+                    <div class="texto-galeria">
+                        <h3>Gere arquivos PDF a partir da sua câmera!</h3>
+                        <p>Você pode fazer das suas fotos de lousas, livros e anotações, um documento!</p>
+                    </div>
                     <figure>
                         <img src="images/funcionalidade3.0.gif" alt="Apresentação da segunda funcionalidade">
-                        <figcaption>Na interface da câmera, o sistema identifica em tempo real que há textos através da captura de imagem da câmera, e sugere um escaneamento, após o acionamento da funcionalidade o texto é escaneado, após a ação de "Gerar PDF" o texto é extraido da imagem e acrescentado num novo arquivo PDF.</figcaption>
+                        <figcaption>Na interface da câmera, o sistema identifica em tempo real, textos sendo capturados, e sugere um escaneamento, num ícone que aparece na parte inferior da tela, após escanear, o usuário tem a opção de "Gerar PDF", o texto é extraído da imagem e acrescentado num novo arquivo PDF que fica salvo na área de arquivos do celular.</figcaption>
                     </figure>
                 </li>
                 <li>
-                    <h3>E também através da sua galeria!</h3>
-                    <p>Você também pode gerar arquivos PDF através das fotos que já estão salvas na sua galeria!</p>
+                    <div class="texto-galeria">
+                        <h3>Gere arquivos PDF através da sua galeria!</h3>
+                        <p>Você também pode gerar PDFs através das fotos que já estão na sua galeria!</p>
+                    </div>
                     <figure>
                         <img src="images/funcionalidade1.0.gif" alt="Apresentação da segunda funcionalidade parte 2">
-                        <figcaption>A funcionalidade de "Gerar PDF" também pode ser acionada através da galeria. O fluxo ocorre de maneira semelhante ao que foi apresentado na imagem anterior, você entra na galeria, seleciona a imagem e gera o PDF a partir da imagem.</figcaption>
+                        <figcaption>A funcionalidade de "Gerar PDF" também pode ser acionada através da galeria. O fluxo ocorre de maneira semelhante ao que foi apresentado na imagem anterior, você entra na galeria, seleciona a imagem e gera o PDF.</figcaption>
                     </figure>
                 </li>
             </ul>
@@ -103,55 +106,70 @@
                 <li>
                     <figure>
                         <img src="images/imagemGiovana.jpeg" alt="Imagem da Giovana">
-                        <figcaption>Giovana + cargo</figcaption>
+                        <figcaption>
+                            <span class="nome-membro">Giovana</span>
+                            <span class="cargo-membro">Gestora e idealizadora do projeto</span>
+                        </figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="images/imagemGiovane.jpeg" alt="Imagem do Giovane">
-                        <figcaption>Giovane + cargo</figcaption>
+                        <figcaption>
+                            <span class="nome-membro">Giovane</span>
+                            <span class="cargo-membro">UI/UX Designer e Desenvolvedor</span>
+                        </figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="images/imagemMie.jpeg" alt="Imagem da Mie">
-                        <figcaption>Mie + cargo</figcaption>
+                        <figcaption>
+                            <span class="nome-membro">Mie</span>
+                            <span class="cargo-membro">Desenvolvedora de sistemas</span>
+                        </figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="images/imagemPedro.jpeg" alt="Imagem do Pedro">
-                        <figcaption>Pedro + cargo</figcaption>
+                        <figcaption>
+                            <span class="nome-membro">Pedro</span>
+                            <span class="cargo-membro">UI/UX Designer e Desenvolvedor</span>
+                        </figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="images/imagemThiago.png" alt="Imagem do Thiago">
-                        <figcaption>Thiago + cargo</figcaption>
+                        <figcaption>
+                            <span class="nome-membro">Thiago</span>
+                            <span class="cargo-membro">Analista de TI</span>
+                        </figcaption>
                     </figure>
                 </li>
             </ul>
         </section>
         <section class="container" id="contato">
             <h2>Contato</h2>
-            <div class="texto-contato"><h3> Deseja testar essa nova funcionalidade de maneira exclusiva? Entre em contato conosco!</h3></div>
+            <div class="texto-contato"><h3> Deseja testar nossa funcionalidade de maneira exclusiva? Entre em contato conosco!</h3></div>
             <form>
                 <div class="campo">
-                <label for="nome">Nome</label>
+                <label for="nome"><img src="./icons/iconuser.svg" alt="icone do usuário" class="icone-campo icone-azul">Nome</label>
                 <input type="text" id="nome" name="nome" maxlength="50" placeholder="Digite seu nome completo">
                 </div>
 
                 <div class="campo">
-                <label for="email">E-mail</label>
+                <label for="email"><img src="./icons/iconenvelope.svg" alt="icone de e-mail" class="icone-campo icone-azul">E-mail</label>
                 <input type="email" id="email" name="email" maxlength="35" placeholder="email@hotmail.com">
                 </div>
 
                 <div class="campo">
-                <label for="telefone">Telefone</label>
+                <label for="telefone"><img src="./icons/iconphone.svg" alt="icone do telefone" class="icone-campo icone-azul">Telefone</label>
                 <input type="tel" id="telefone" name="telefone" maxlength="12" placeholder="(99) 01234-5678">
                 </div>
                 
-                <div class="campo campo-mensagem">
+                <div class="campo">
                 <label for="mensagem">Mensagem</label>
                 <textarea name="mensagem" id="mensagem" maxlength="500" placeholder="Escreva sua mensagem aqui..." rows="5"></textarea>
                 </div>

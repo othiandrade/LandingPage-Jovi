@@ -23,6 +23,10 @@ html {
     --fonte-principal:"IBM Plex Sans", sans-serif;
 }
 
+.icone-azul {
+    filter: invert(21%) sepia(99%) saturate(3140%) hue-rotate(224deg) brightness(92%) contrast(103%);
+}
+
 body {
     font-family: var(--fonte-principal);
     color: var(--cor-primaria);
@@ -241,7 +245,6 @@ input:focus, textarea:focus {
     }
 
     .hero{
-        text-align: center;
         overflow: hidden;
     }
 
@@ -302,7 +305,8 @@ img {
 }
 
 .hero {
-    padding-top: 2rem;
+    padding-top: 3.5rem;
+    text-align: center;
     }
 
 .hero img {
@@ -382,20 +386,19 @@ figure {
     gap: 0.75rem;
 }
 
-figcaption {
-    color: var(--cor-texto);
-}
-
 #nossaequipe li {
     background-color: var(--cor-fundo-secundaria);
     padding: 1.5rem;
     border-radius: 8px;
+    text-align: center;
 }
 
 #nossaequipe img {
     border-radius: 50%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    max-width: 140px;
+    margin: 0 auto;
 }
 
 .card-funcionalidade,
@@ -412,11 +415,29 @@ figcaption {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+figcaption {
+    display: flex;
+    flex-direction: column;
+    color: var(--cor-texto);
+}
+
+.nome-membro {
+    font-weight: 700;
+    color: var(--cor-primaria);
+    font-size: 1.05rem;
+}
+
+.cargo-membro {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
 .texto-contato h3 {
     font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-weight: 700;
     margin-bottom: 4rem;
 }
@@ -439,7 +460,6 @@ figcaption {
 }
 
 .icone-foldertree {
-    filter: invert(21%) sepia(99%) saturate(3140%) hue-rotate(224deg) brightness(92%) contrast(103%);
     width: 25px;
     height: 25px;
     display: inline-block;
@@ -448,7 +468,6 @@ figcaption {
 }
 
 .icone-de-pdf {
-    filter: invert(21%) sepia(99%) saturate(3140%) hue-rotate(224deg) brightness(92%) contrast(103%);
     width: 25px;
     height: 25px;
     display: inline-block;
@@ -480,9 +499,10 @@ section:not(.hero):nth-of-type(even) {
 
 .redes-sociais {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
-    margin-top: -0.5rem;
+    gap: 1rem 2.3rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -496,42 +516,10 @@ section:not(.hero):nth-of-type(even) {
     opacity: 0.6;
 }
 
-.icone-instagram {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: -1.2rem;
-    filter: brightness(0) invert(1)
-}
-
-.icone-tiktok {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: -1.2rem;
-    filter: brightness(0) invert(1)
-}
-
-.icone-facebook {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: -1.2rem;
-    filter: brightness(0) invert(1)
-}
-
-.icone-youtube {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: -1.2rem;
-    filter: brightness(0) invert(1)
-}
-
+.icone-instagram,
+.icone-tiktok,
+.icone-facebook,
+.icone-youtube,
 .icone-linkedin {
     width: 20px;
     height: 20px;
@@ -542,12 +530,23 @@ section:not(.hero):nth-of-type(even) {
 }
 
 .icone-estudante {
-    filter: invert(21%) sepia(99%) saturate(3140%) hue-rotate(224deg) brightness(92%) contrast(103%);
     width: 20px;
     height: 20px;
     display: inline-block;
     vertical-align: middle;
     margin-right: 0.4rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+}
+
+.icone-campo {
+    width: 18px;
+    height: 18px;
 }
 
 footer {
